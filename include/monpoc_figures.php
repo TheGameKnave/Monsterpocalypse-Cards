@@ -4628,7 +4628,7 @@ $figures = array(
 		"hyper" => 4,
 		"abilities" => array(
 			"Power Strike" => array("trigger" => "brawl", ),
-			"Weapon Master" => array("trigger" => "brawl", ),
+			"Weapon Master" => array("trigger" => "blast", ),
 			"Juggernaut_short" => array(),
 			"Flight_short" => array(),
 			"Reach" => array(),)
