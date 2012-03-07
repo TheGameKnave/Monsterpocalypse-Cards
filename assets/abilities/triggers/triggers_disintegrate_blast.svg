@@ -1,0 +1,32 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.894px" height="10.873px" viewBox="0 0 10.894 10.873" enable-background="new 0 0 10.894 10.873" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<polygon fill="#<?php echo $color; ?>" points="0.021,10.873 1.381,8.829 0,6.712 1.381,5.437 0.021,1.36 3.417,2.718 5.457,0 7.497,2.718 10.894,1.36 
+				9.533,5.437 10.894,6.794 9.533,8.829 10.894,10.873 			"/>
+			<polygon fill="#FFFFFF"  points="8.84,4.254 5.691,7.402 6.202,7.914 3.859,8.592 4.538,6.249 5.048,6.761 8.306,3.504 			"/>
+			<rect x="3.229" y="5.803" fill="#FFFFFF"  width="0.675" height="0.863"/>
+			<rect x="2.054" y="6.467" fill="#FFFFFF"  width="0.674" height="0.861"/>
+			<rect x="2.728" y="7.61" fill="#FFFFFF"  width="0.675" height="0.863"/>
+			<rect x="4.043" y="8.967" fill="#FFFFFF"  width="0.674" height="0.861"/>
+			<rect x="5.332" y="8.547" fill="#FFFFFF"  width="0.675" height="0.861"/>
+			<rect x="6.655" y="7.706" fill="#FFFFFF"  width="0.674" height="0.862"/>
+			<rect x="7.478" y="8.778" fill="#FFFFFF"  width="0.675" height="0.862"/>
+			<rect x="2.413" y="8.852" fill="#FFFFFF"  width="0.676" height="0.861"/>
+		</g>
+	</g>
+</g>
+</svg>

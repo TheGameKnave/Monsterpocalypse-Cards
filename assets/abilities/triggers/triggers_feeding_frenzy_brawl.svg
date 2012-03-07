@@ -1,0 +1,27 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Brawl_Trigger_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="10.689px" height="10.689px" viewBox="0 0 10.689 10.689" enable-background="new 0 0 10.689 10.689"
+	 xml:space="preserve">
+<path fill="#<?php echo $color; ?>" id="Brawl_Trigger" d="M10.267,5.346c0-1.031-0.319-1.989-0.858-2.777L10.689,0L8.125,1.283
+	C7.33,0.741,6.376,0.425,5.344,0.425c-1.031,0-1.986,0.316-2.779,0.858L0,0l1.284,2.568C0.741,3.356,0.422,4.314,0.422,5.346
+	c0,1.028,0.319,1.988,0.862,2.778L0,10.689l2.564-1.283c0.793,0.543,1.748,0.86,2.779,0.86c1.032,0,1.986-0.317,2.781-0.86
+	l2.564,1.283L9.408,8.124C9.947,7.334,10.267,6.374,10.267,5.346"/>
+<g>
+	<path fill="#FFFFFF"  d="M7.833,2.453C7.907,2.527,7.955,2.613,7.989,2.7c0.088,0.036,0.174,0.083,0.248,0.156
+		C8.48,3.103,8.516,3.465,8.313,3.667C8.142,3.839,7.862,3.833,7.631,3.685L6.656,4.658L6.031,4.034l0.974-0.976
+		C6.856,2.827,6.85,2.548,7.021,2.377C7.225,2.174,7.587,2.208,7.833,2.453"/>
+	<path fill="#FFFFFF"  d="M2.708,7.981C1.94,7.213,2.262,5.645,2.702,5.204c0.442-0.441,3.046-0.806,3.046-0.806l0.59,0.59
+		c0,0-0.411,2.557-0.853,2.999C5.044,8.429,3.476,8.75,2.708,7.981"/>
+</g>
+</svg>

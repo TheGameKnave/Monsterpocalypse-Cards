@@ -1,0 +1,32 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Brawl_Trigger_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="10.689px" height="10.689px" viewBox="0 0 10.689 10.689" enable-background="new 0 0 10.689 10.689"
+	 xml:space="preserve">
+<path fill="#<?php echo $color; ?>" id="Brawl_Trigger" d="M10.267,5.346c0-1.031-0.319-1.989-0.858-2.777L10.689,0L8.125,1.283
+	C7.33,0.741,6.376,0.425,5.344,0.425c-1.031,0-1.986,0.316-2.779,0.858L0,0l1.284,2.568C0.741,3.356,0.422,4.314,0.422,5.346
+	c0,1.028,0.319,1.988,0.862,2.778L0,10.689l2.564-1.283c0.793,0.543,1.748,0.86,2.779,0.86c1.032,0,1.986-0.317,2.781-0.86
+	l2.564,1.283L9.408,8.124C9.947,7.334,10.267,6.374,10.267,5.346"/>
+<rect x="5.851" y="1.696" transform="matrix(0.7074 0.7069 -0.7069 0.7074 3.3268 -3.8726)" fill="#FFFFFF"  width="0.979" height="0.771"/>
+<rect x="5.631" y="1.614" transform="matrix(0.7065 0.7077 -0.7077 0.7065 3.5394 -3.3787)" fill="#FFFFFF"  width="0.426" height="1.928"/>
+<rect x="7.277" y="2.223" transform="matrix(0.7074 0.7069 -0.7069 0.7074 4.1163 -4.7259)" fill="#FFFFFF"  width="0.977" height="0.771"/>
+<rect x="6.848" y="2.054" transform="matrix(0.7048 0.7094 -0.7094 0.7048 4.4356 -4.0305)" fill="#FFFFFF"  width="0.425" height="2.52"/>
+<polygon fill="#FFFFFF"  points="4.464,7.561 4.382,7.48 2.008,5.108 1.927,5.026 2.008,4.943 4.382,2.571 4.464,2.49 4.546,2.571 
+	6.918,4.943 7,5.026 6.918,5.108 4.546,7.48 "/>
+<path fill="#<?php echo $color; ?>" d="M4.464,2.653l2.372,2.372L4.464,7.398L2.091,5.025L4.464,2.653z M4.464,2.326L4.301,2.49L1.927,4.861L1.764,5.025
+	l0.163,0.164l2.374,2.372l0.163,0.163l0.164-0.163L7,5.189l0.163-0.164L7,4.861L4.628,2.49L4.464,2.326z"/>
+<polygon fill="#FFFFFF"  points="5.178,5.575 3.955,7.856 6.402,7.856 "/>
+<path fill="#<?php echo $color; ?>" d="M3.663,8.031l1.362-2.538l0.153-0.284l1.513,2.822H3.663z M4.243,7.684h1.869L5.178,5.942L4.243,7.684z M5.025,5.657
+	l0.154-0.082L5.025,5.657z"/>
+<rect x="3.058" y="7.663" fill="#FFFFFF"  width="4.241" height="0.881"/>
+</svg>

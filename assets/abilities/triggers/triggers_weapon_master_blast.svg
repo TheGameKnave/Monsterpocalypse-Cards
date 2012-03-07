@@ -1,0 +1,30 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.893px" height="10.872px" viewBox="0 0 10.893 10.872" enable-background="new 0 0 10.893 10.872" xml:space="preserve">
+<polygon fill="#<?php echo $color; ?>" points="0.02,10.872 1.38,8.828 0,6.711 1.38,5.436 0.02,1.36 3.416,2.717 5.457,0 7.495,2.717 10.893,1.36 9.532,5.436 
+	10.893,6.793 9.532,8.828 10.893,10.872 "/>
+<polygon fill="#FFFFFF"  points="8.079,4.444 8.079,3.552 7.187,3.552 4.109,6.631 5.001,7.522 "/>
+<g>
+	<path fill="#FFFFFF"  d="M3.233,6.909c-0.12-0.118-0.119-0.313,0-0.431c0.119-0.119,0.312-0.119,0.431,0l1.583,1.583
+		c0.12,0.12,0.12,0.312,0,0.431c-0.118,0.118-0.313,0.12-0.431,0L3.233,6.909z"/>
+	<path fill="#FFFFFF"  d="M3.307,7.643c-0.059-0.058-0.058-0.154,0-0.211c0.059-0.059,0.154-0.059,0.212,0l0.777,0.776
+		c0.058,0.058,0.058,0.153,0,0.212c-0.06,0.058-0.154,0.058-0.213,0L3.307,7.643z"/>
+	<path fill="#FFFFFF"  d="M3.032,7.927c-0.06-0.058-0.059-0.153,0-0.211c0.059-0.059,0.152-0.059,0.212,0L4.02,8.492
+		c0.06,0.058,0.06,0.153,0,0.212c-0.058,0.057-0.152,0.058-0.211,0L3.032,7.927z"/>
+	<path fill="#FFFFFF"  d="M2.738,8.211c-0.058-0.059-0.057-0.155,0-0.213c0.059-0.058,0.154-0.058,0.212,0l0.777,0.777
+		c0.058,0.059,0.058,0.153,0,0.211c-0.06,0.058-0.154,0.059-0.212,0L2.738,8.211z"/>
+	<path fill="#FFFFFF"  d="M3.387,9.001L2.763,8.376C2.537,8.434,2.368,8.63,2.368,8.872c0,0.288,0.234,0.522,0.523,0.522
+		C3.133,9.394,3.327,9.225,3.387,9.001"/>
+</g>
+</svg>

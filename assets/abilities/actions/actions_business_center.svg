@@ -1,0 +1,37 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.585px" height="10.584px" viewBox="0 0 10.585 10.584" enable-background="new 0 0 10.585 10.584" xml:space="preserve">
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" width="10.585" height="10.584"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M10.585,5.292c0,2.923-2.369,5.293-5.292,5.293S0,8.215,0,5.292C0,2.37,2.37,0,5.293,0
+		S10.585,2.37,10.585,5.292"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M9.431,5.257c0,2.288-1.855,4.143-4.143,4.143C3,9.399,1.146,7.545,1.146,5.257
+		S3,1.115,5.288,1.115C7.576,1.115,9.431,2.969,9.431,5.257"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M5.502,8.931H5.111v-0.8c-0.53-0.059-0.924-0.177-1.184-0.347
+		c-0.458-0.309-0.684-0.835-0.676-1.58h1.087C4.375,6.543,4.426,6.77,4.494,6.885c0.104,0.18,0.31,0.297,0.617,0.351V5.517
+		L4.784,5.419C4.272,5.269,3.91,5.058,3.7,4.791C3.489,4.523,3.384,4.199,3.384,3.82c0-0.25,0.04-0.476,0.123-0.68
+		c0.081-0.203,0.196-0.38,0.344-0.528c0.19-0.19,0.402-0.321,0.636-0.395c0.142-0.044,0.35-0.079,0.624-0.1V1.582h0.391v0.543
+		C5.938,2.16,6.28,2.267,6.527,2.448C6.98,2.734,7.213,3.201,7.229,3.845H6.17c-0.021-0.24-0.061-0.413-0.119-0.523
+		C5.95,3.132,5.767,3.026,5.502,3.006v1.536c0.636,0.219,1.064,0.412,1.283,0.583c0.36,0.281,0.54,0.681,0.54,1.192
+		c0,0.677-0.247,1.167-0.745,1.476C6.277,7.98,5.917,8.089,5.502,8.122V8.931z M5.111,3.015c-0.234,0.006-0.408,0.067-0.52,0.188
+		C4.479,3.322,4.422,3.486,4.422,3.691c0,0.226,0.086,0.405,0.253,0.535C4.77,4.3,4.915,4.368,5.111,4.428V3.015z M5.502,7.224
+		C5.711,7.197,5.864,7.149,5.96,7.079c0.166-0.125,0.251-0.337,0.251-0.642c0-0.229-0.079-0.413-0.236-0.548
+		c-0.092-0.077-0.25-0.156-0.473-0.24V7.224z"/>
+</g>
+</svg>

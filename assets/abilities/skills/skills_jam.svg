@@ -1,0 +1,34 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.392px" height="10.393px" viewBox="0 0 10.392 10.393" enable-background="new 0 0 10.392 10.393" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" width="10.392" height="10.393"/>
+<polygon fill="#FFFFFF" points="8.762,6.939 9.206,9.458 8.437,8.058 7.544,9.138 7.354,7.441 6.581,8.367 6.531,6.432 7.319,5.398 
+	7.417,6.628 8.025,5.865 7.895,8.023 "/>
+<polygon fill="#FFFFFF" points="6.97,1.592 9.487,1.148 8.089,1.917 9.169,2.809 7.471,3 8.399,3.771 6.463,3.823 5.429,3.036 
+	6.659,2.936 5.897,2.329 8.052,2.459 "/>
+<polygon fill="#FFFFFF" points="1.624,3.383 1.179,0.865 1.949,2.265 2.842,1.185 3.031,2.881 3.803,1.955 3.854,3.891 3.067,4.924 
+	2.968,3.694 2.36,4.457 2.491,2.301 "/>
+<polygon fill="#FFFFFF" points="3.414,8.73 0.896,9.174 2.295,8.404 1.217,7.511 2.913,7.322 1.985,6.552 3.923,6.5 4.956,7.287 
+	3.727,7.386 4.489,7.993 2.332,7.863 "/>
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" width="10.392" height="10.393"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M6.429,5.161c0,0.682-0.553,1.235-1.236,1.235
+		c-0.681,0-1.235-0.554-1.235-1.235c0-0.683,0.554-1.236,1.235-1.236C5.876,3.925,6.429,4.479,6.429,5.161"/>
+</g>
+</svg>

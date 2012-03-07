@@ -1,0 +1,32 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11.072px" height="10.528px" viewBox="0 0 11.072 10.528" enable-background="new 0 0 11.072 10.528" xml:space="preserve">
+<g>
+	<path fill="#<?php echo $color; ?>" d="M1.085,5.778C1.91,7.206,3.104,8.286,4.476,8.97l-0.9,1.558c1.856-0.591,3.506-1.849,4.556-3.666
+		C8.963,5.42,9.301,3.831,9.2,2.286h1.873C9.633,0.974,7.719,0.175,5.62,0.175c-1.68,0-3.238,0.512-4.531,1.387L0.188,0
+		C-0.229,1.902,0.037,3.958,1.085,5.778"/>
+</g>
+<polygon fill="#FFFFFF"  points="5.714,3.253 5.975,1.408 5.327,2.435 4.977,0.411 4.577,2.482 3.898,1.408 4.161,3.253 3.208,2.856 
+	3.852,3.971 6.019,3.971 6.665,2.856 "/>
+<polygon fill="#FFFFFF"  points="3.961,5.831 4.221,3.985 3.574,5.011 3.224,2.987 2.824,5.059 2.145,3.985 2.408,5.831 1.454,5.433 
+	2.098,6.547 4.266,6.547 4.913,5.433 "/>
+<path fill="#<?php echo $color; ?>" d="M2.049,6.63L1.257,5.258l1.045,0.436L2.006,3.608L2.78,4.833l0.448-2.31L3.62,4.78l0.74-1.172L4.065,5.695l1.046-0.437
+	L4.314,6.63H2.049z M2.146,6.461h2.071l0.496-0.854l-0.72,0.3L3.855,5.965l0.227-1.604l-0.556,0.88L3.219,3.457L2.867,5.286
+	L2.285,4.363l0.227,1.603l-0.86-0.359L2.146,6.461z M4.044,5.842L3.961,5.831L4.044,5.842z"/>
+<polygon fill="#FFFFFF"  points="7.511,5.979 7.793,3.985 7.092,5.094 6.714,2.906 6.281,5.147 5.548,3.985 5.831,5.979 4.8,5.549 
+	5.497,6.755 7.84,6.755 8.54,5.549 "/>
+<path fill="#<?php echo $color; ?>" d="M5.448,6.838L4.605,5.375l1.122,0.467L5.41,3.607L6.239,4.92l0.478-2.479l0.42,2.421l0.792-1.254L7.616,5.842l1.125-0.471
+	L7.888,6.838H5.448z M5.546,6.67h2.246l0.549-0.947L7.543,6.057L7.406,6.113L7.654,4.36l-0.61,0.962L6.71,3.373l-0.388,2
+	L5.688,4.362l0.247,1.752L4.999,5.723L5.546,6.67z M7.595,5.991L7.511,5.979L7.595,5.991z"/>
+</svg>

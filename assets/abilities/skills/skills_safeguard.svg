@@ -1,0 +1,22 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.393px" height="10.392px" viewBox="0 0 10.393 10.392" enable-background="new 0 0 10.393 10.392" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" width="10.393" height="10.392"/>
+<g>
+	<path fill="#FFFFFF" d="M7.888,4.44V3.525c0-1.392-1.206-2.519-2.695-2.519c-1.491,0-2.697,1.127-2.697,2.519V4.44H2.246v4.876
+		h5.891V4.44H7.888z M3.528,4.021c0-0.996,0.744-1.803,1.661-1.803s1.659,0.807,1.659,1.803v0.416h-3.32V4.021z M5.783,7.089v1.437
+		H4.601V7.089C4.279,6.913,4.065,6.6,4.065,6.24c0-0.551,0.503-0.997,1.127-0.997c0.622,0,1.126,0.446,1.126,0.997
+		C6.318,6.6,6.104,6.913,5.783,7.089"/>
+</g>
+</svg>

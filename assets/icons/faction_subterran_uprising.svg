@@ -1,0 +1,35 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="8.771px" height="9.286px" viewBox="0 0 8.771 9.286" enable-background="new 0 0 8.771 9.286" xml:space="preserve">
+<polygon fill="#FFFFFF" points="4.86,9.088 3.911,9.088 1.423,9.088 0.245,7.867 1.701,5.244 4.253,0.647 4.386,0.408 4.519,0.647 
+	6.193,3.664 8.526,7.867 7.348,9.088 "/>
+<polygon fill="none" stroke="#<?php echo $color; ?>" stroke-width="0.3967" points="6.193,3.664 4.519,0.647 4.386,0.408 4.253,0.647 1.701,5.244 
+	0.245,7.867 1.423,9.088 3.911,9.088 4.86,9.088 7.348,9.088 8.526,7.867 "/>
+<g>
+	<path fill="#<?php echo $color; ?>" d="M7.262,5.538L8.373,5.79v0.468c0,0-2.275,1.443-6.383,1.609C1.99,7.867,5.045,7.016,7.262,5.538"/>
+	<path fill="none" stroke="#<?php echo $color; ?>" stroke-width="0.2193" stroke-miterlimit="8" d="M7.262,5.538L8.373,5.79v0.468
+		c0,0-2.275,1.443-6.383,1.609C1.99,7.867,5.045,7.016,7.262,5.538z"/>
+	<path fill="#<?php echo $color; ?>" d="M7.305,4.012L6.223,3.768L6.221,3.761c0,0-0.004,0.001-0.009,0.004L6.193,3.761c-0.02,0.014-0.038,0.027-0.057,0.042
+		C5.719,4.006,3.773,4.904,1.261,5.334c-0.02,0-0.039,0.001-0.058,0.002L0.646,6.125l0.426,0.33c2.19-0.311,4.398-1.168,5.505-1.645
+		c0.463-0.195,0.729-0.33,0.729-0.33V4.012z"/>
+	<path fill="none" stroke="#<?php echo $color; ?>" stroke-width="0.2193" stroke-miterlimit="8" d="M7.305,4.012L6.223,3.768L6.221,3.761
+		c0,0-0.004,0.001-0.009,0.004L6.193,3.761c-0.02,0.014-0.038,0.027-0.057,0.042C5.719,4.005,3.773,4.903,1.261,5.334
+		c-0.02,0-0.039,0.001-0.058,0.002L0.646,6.125l0.426,0.33c2.19-0.311,4.398-1.168,5.505-1.645c0.463-0.195,0.729-0.33,0.729-0.33
+		V4.012z"/>
+	<path fill="#<?php echo $color; ?>" d="M2.044,3.539L2.007,3.592L1.995,3.608l0.426,0.331c0,0,0.05-0.008,0.141-0.025c0.615-0.096,1.824-0.693,2.093-1.086H2.547
+		L2.044,3.539z"/>
+	<path fill="none" stroke="#<?php echo $color; ?>" stroke-width="0.2193" stroke-miterlimit="8" d="M2.044,3.539L2.007,3.592L1.995,3.608
+		l0.426,0.331c0,0,0.05-0.008,0.141-0.025c0.615-0.096,1.824-0.693,2.093-1.086H2.547L2.044,3.539z"/>
+</g>
+</svg>

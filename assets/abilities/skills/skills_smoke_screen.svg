@@ -1,0 +1,42 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.393px" height="10.393px" viewBox="0 0 10.393 10.393" enable-background="new 0 0 10.393 10.393" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" x="0.001" width="10.392" height="10.393"/>
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" width="10.392" height="10.393"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M7.365,1.295c-1.149,0-2.108,0.781-2.401,1.838
+		c-0.19-0.239-0.48-0.396-0.809-0.396c-0.571,0-1.033,0.463-1.033,1.035c0,0.283,0.114,0.541,0.301,0.729
+		C2.998,4.628,2.688,5.018,2.688,5.484c0,0.195,0.058,0.377,0.151,0.531c-0.771,0.076-1.378,0.719-1.378,1.51
+		c0,0.441,0.192,0.836,0.493,1.115C1.493,8.809,1.076,9.07,0.729,9.402h8.705V2.389C8.982,1.729,8.226,1.295,7.365,1.295"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M6.939,7.03c0.539-0.539,1.292-0.735,1.986-0.592C8.202,5.944,7.209,6.018,6.567,6.659
+		S5.854,8.293,6.347,9.018C6.202,8.321,6.399,7.569,6.939,7.03"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M4.834,7.613c0.382-0.382,0.913-0.521,1.405-0.419C5.728,6.846,5.025,6.897,4.572,7.35
+		C4.118,7.803,4.067,8.506,4.415,9.018C4.313,8.525,4.452,7.994,4.834,7.613"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M8.045,2.79C7.663,2.408,7.132,2.269,6.64,2.372c0.513-0.349,1.214-0.298,1.668,0.156
+		C8.761,2.98,8.812,3.683,8.464,4.193C8.565,3.701,8.426,3.17,8.045,2.79"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M7.457,4.157C6.921,3.621,6.173,3.426,5.482,3.568c0.719-0.49,1.706-0.418,2.344,0.22
+		s0.709,1.624,0.22,2.343C8.189,5.44,7.993,4.693,7.457,4.157"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M4.484,6.04C5.232,5.291,6.276,5.018,7.24,5.219C6.236,4.534,4.86,4.635,3.97,5.525
+		C3.081,6.414,2.98,7.79,3.663,8.793C3.464,7.829,3.736,6.787,4.484,6.04"/>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M3.764,2.13c0.727,0.235,1.243,0.815,1.432,1.5c0.109-0.869-0.406-1.72-1.271-2
+		C3.063,1.35,2.146,1.738,1.726,2.505C2.279,2.061,3.038,1.894,3.764,2.13"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M6.969,1.527c0,0.343-0.279,0.622-0.622,0.622
+		c-0.344,0-0.622-0.279-0.622-0.622c0-0.344,0.278-0.622,0.622-0.622C6.689,0.905,6.969,1.183,6.969,1.527"/>
+</g>
+</svg>

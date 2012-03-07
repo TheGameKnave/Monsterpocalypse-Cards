@@ -1,0 +1,22 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.893px" height="10.872px" viewBox="0 0 10.893 10.872" enable-background="new 0 0 10.893 10.872" xml:space="preserve">
+<polygon fill="#<?php echo $color; ?>" points="0.02,10.872 1.38,8.828 0,6.711 1.38,5.436 0.02,1.36 3.416,2.717 5.457,0 7.495,2.717 10.893,1.36 9.532,5.436 
+	10.893,6.793 9.532,8.828 10.893,10.872 "/>
+<polygon fill="#FFFFFF"  points="5.398,4.734 6.035,2.944 6.672,4.734 8.389,3.919 7.572,5.635 9.362,6.271 7.572,6.908 8.389,8.624 
+	6.672,7.808 6.035,9.597 5.398,7.808 3.683,8.624 4.498,6.908 2.708,6.271 4.498,5.635 3.683,3.919 "/>
+<polygon fill="#FFFFFF"  points="1.529,5.797 5.995,5.797 5.995,4.804 7.415,6.271 5.995,7.738 5.995,6.745 1.529,6.745 "/>
+<polygon fill="none"  stroke="#<?php echo $color; ?>" stroke-width="0.375" points="1.529,5.797 5.995,5.797 5.995,4.804 7.415,6.271 5.995,7.738 
+	5.995,6.745 1.529,6.745 "/>
+</svg>

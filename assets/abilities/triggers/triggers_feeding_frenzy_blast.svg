@@ -1,0 +1,25 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Blast_Trigger_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="10.892px" height="10.872px" viewBox="0 0 10.892 10.872" enable-background="new 0 0 10.892 10.872"
+	 xml:space="preserve">
+<polygon fill="#<?php echo $color; ?>" id="Blast_Trigger" points="0.02,10.872 1.38,8.829 0,6.712 1.38,5.437 0.02,1.36 3.416,2.718 5.457,0 7.496,2.718 
+	10.892,1.36 9.533,5.437 10.892,6.794 9.533,8.829 10.892,10.872 "/>
+<g>
+	<path fill="#FFFFFF"  d="M7.934,3.903C8.008,3.978,8.056,4.063,8.09,4.15c0.088,0.036,0.174,0.083,0.248,0.156
+		c0.244,0.246,0.279,0.608,0.076,0.811C8.243,5.289,7.963,5.283,7.733,5.135L6.758,6.108L6.132,5.484l0.974-0.976
+		c-0.149-0.231-0.155-0.51,0.016-0.681C7.327,3.625,7.688,3.659,7.934,3.903"/>
+	<path fill="#FFFFFF"  d="M2.81,9.432C2.042,8.663,2.363,7.095,2.804,6.654C3.246,6.212,5.85,5.848,5.85,5.848l0.59,0.59
+		c0,0-0.411,2.557-0.853,2.999C5.146,9.879,3.578,10.2,2.81,9.432"/>
+</g>
+</svg>

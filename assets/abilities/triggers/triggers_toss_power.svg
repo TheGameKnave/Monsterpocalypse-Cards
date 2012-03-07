@@ -1,0 +1,33 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11.073px" height="10.526px" viewBox="0 0 11.073 10.526" enable-background="new 0 0 11.073 10.526" xml:space="preserve">
+<path fill="#<?php echo $color; ?>" id="Power_Trigger" d="M1.086,5.776C1.91,7.205,3.104,8.285,4.476,8.97l-0.898,1.557c1.854-0.59,3.505-1.848,4.555-3.666
+	C8.964,5.421,9.302,3.83,9.2,2.286h1.873C9.634,0.974,7.72,0.175,5.62,0.175c-1.681,0-3.237,0.513-4.531,1.387L0.188,0
+	C-0.229,1.901,0.037,3.959,1.086,5.776"/>
+<g>
+	<path fill="#FFFFFF"  d="M4.88,5.57l2.979,0.046c0.17-0.549,0.313-1.191,0.306-1.788L5.837,4.652C5.583,4.927,5.268,5.232,4.88,5.57
+		"/>
+	<path fill="#FFFFFF"  d="M6.638,2.809l0.81-0.598C7.145,2.003,6.73,1.872,6.172,1.854L5.833,2.252
+		C6.195,2.354,6.509,2.524,6.638,2.809"/>
+	<path fill="#FFFFFF"  d="M3.041,7.011H7.31c0,0,0.227-0.448,0.445-1.08L4.513,5.88C4.095,6.225,3.607,6.601,3.041,7.011"/>
+	<path fill="#FFFFFF"  d="M4.213,2.127c0,0,0.711-0.059,1.37,0.068l0.289-0.341C5.41,1.87,4.861,1.956,4.213,2.127"/>
+	<path fill="#FFFFFF"  d="M6.199,4.22l1.949-0.688C8.102,3.087,7.954,2.682,7.65,2.382L6.698,3.084
+		C6.705,3.371,6.563,3.742,6.199,4.22"/>
+	<path fill="#FFFFFF"  d="M3.96,3.075c-0.501,0-0.909-0.407-0.909-0.908c0-0.503,0.408-0.911,0.909-0.911s0.91,0.408,0.91,0.911
+		C4.87,2.667,4.462,3.075,3.96,3.075"/>
+	<path fill="#<?php echo $color; ?>" d="M3.96,1.398c0.424,0,0.768,0.344,0.768,0.767c0,0.425-0.344,0.769-0.768,0.769S3.193,2.59,3.193,2.165
+		C3.193,1.743,3.537,1.398,3.96,1.398 M3.96,1.115c-0.58,0-1.052,0.471-1.052,1.05c0,0.581,0.472,1.053,1.052,1.053
+		s1.052-0.472,1.052-1.053C5.013,1.585,4.54,1.115,3.96,1.115"/>
+</g>
+</svg>

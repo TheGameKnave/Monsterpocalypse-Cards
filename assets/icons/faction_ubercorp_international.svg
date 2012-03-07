@@ -1,0 +1,30 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.08px" height="10.08px" viewBox="0 0 10.08 10.08" enable-background="new 0 0 10.08 10.08" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M5.04,9.978c-2.724,0-4.938-2.215-4.938-4.938S2.316,0.102,5.04,0.102c2.723,0,4.938,2.215,4.938,4.938
+		S7.763,9.978,5.04,9.978"/>
+	<path fill="#<?php echo $color; ?>" d="M5.04,0.204c2.667,0,4.836,2.169,4.836,4.836S7.707,9.876,5.04,9.876S0.203,7.707,0.203,5.04S2.373,0.204,5.04,0.204
+		 M5.04,0C2.257,0,0,2.257,0,5.04c0,2.784,2.257,5.04,5.04,5.04s5.04-2.256,5.04-5.04C10.08,2.257,7.823,0,5.04,0"/>
+	<path fill="#<?php echo $color; ?>" d="M5.04,0C3.777,0,2.624,0.464,1.739,1.231v7.618C2.624,9.616,3.777,10.08,5.04,10.08c1.262,0,2.416-0.464,3.301-1.231V1.231
+		C7.456,0.464,6.302,0,5.04,0"/>
+	<path fill="#FFFFFF" d="M6.434,7.812H3.636c-0.7,0-1.267-0.564-1.267-1.267V3.231c0.702,0,1.267,0.576,1.267,1.277v1.725
+		c0,0.215,0.177,0.379,0.38,0.379h2.037c0.215,0,0.381-0.164,0.381-0.379V4.509c0-0.701,0.574-1.277,1.276-1.277v3.313
+		C7.71,7.247,7.135,7.812,6.434,7.812"/>
+	<path fill="#FFFFFF" d="M6.414,2.73c0,0.262-0.212,0.474-0.474,0.474S5.467,2.992,5.467,2.73c0-0.263,0.212-0.474,0.474-0.474
+		S6.414,2.468,6.414,2.73"/>
+	<path fill="#FFFFFF" d="M4.613,2.73c0,0.262-0.213,0.474-0.475,0.474c-0.261,0-0.473-0.212-0.473-0.474
+		c0-0.263,0.212-0.474,0.473-0.474C4.4,2.257,4.613,2.468,4.613,2.73"/>
+</g>
+</svg>

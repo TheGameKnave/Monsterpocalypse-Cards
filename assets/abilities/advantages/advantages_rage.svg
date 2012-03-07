@@ -1,0 +1,31 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11.331px" height="10.777px" viewBox="0 0 11.331 10.777" enable-background="new 0 0 11.331 10.777" xml:space="preserve">
+<polygon fill="#<?php echo $color; ?>" points="5.666,9.623 2.166,10.777 2.181,7.09 0,4.117 3.511,2.99 5.666,0 7.821,2.99 11.331,4.117 9.152,7.09 9.167,10.777 
+	"/>
+<polygon fill="#FFFFFF" points="5.665,6.205 8.454,3.828 2.876,3.828 "/>
+<g>
+	<path fill="#FFFFFF" d="M4.113,5.588c0,0.342-0.277,0.617-0.618,0.617c-0.342,0-0.619-0.275-0.619-0.617
+		c0-0.343,0.277-0.619,0.619-0.619C3.836,4.969,4.113,5.245,4.113,5.588"/>
+	<path fill="#FFFFFF" d="M8.455,5.588c0,0.342-0.276,0.617-0.618,0.617c-0.344,0-0.619-0.275-0.619-0.617
+		c0-0.343,0.275-0.619,0.619-0.619C8.179,4.969,8.455,5.245,8.455,5.588"/>
+	<polygon fill="#FFFFFF" points="5.665,6.605 6.259,8.701 5.072,8.701 	"/>
+	<polygon fill="#FFFFFF" points="7.524,6.605 8.116,8.703 6.934,8.703 	"/>
+	<polygon fill="#FFFFFF" points="3.805,6.605 4.397,8.701 3.214,8.701 	"/>
+	<polygon fill="#FFFFFF" points="4.735,8.703 4.144,6.605 5.327,6.605 	"/>
+	<polygon fill="#FFFFFF" points="6.596,8.703 6.003,6.605 7.188,6.605 	"/>
+	<polygon fill="#FFFFFF" points="7.863,6.605 8.455,8.703 8.455,6.605 	"/>
+	<polygon fill="#FFFFFF" points="3.468,6.605 2.876,8.703 2.876,6.605 	"/>
+</g>
+</svg>

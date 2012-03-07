@@ -1,0 +1,38 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20.943px" height="21.04px" viewBox="0 0 20.943 21.04" enable-background="new 0 0 20.943 21.04" xml:space="preserve">
+<rect fill="#FFFFFF" width="20.943" height="21.04"/>
+<rect fill="#<?php echo $color; ?>" width="20.943" height="1.72"/>
+<rect fill="#<?php echo $color; ?>" y="19.415" width="20.943" height="1.625"/>
+<circle fill="#<?php echo $color; ?>" cx="7.857" cy="10.531" r="6.079"/>
+<polygon fill="#<?php echo $color; ?>" points="0,9.577 1.818,9.834 1.818,11.344 0,11.463 "/>
+<polygon fill="#<?php echo $color; ?>" points="20.943,8.836 13.896,9.837 13.896,11.228 20.943,12.228 "/>
+<g>
+	<polygon fill="#<?php echo $color; ?>" points="20.943,15.81 13.489,12.822 12.81,14.056 20.634,19.415 20.943,19.415 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="15.881,19.415 11.961,15.016 11.124,15.658 13.397,19.415 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="11.296,19.415 10.026,16.212 9.269,16.445 10.054,19.415 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="8.29,16.595 8.406,19.415 7.332,19.415 7.546,16.595 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="6.485,16.454 5.612,19.415 4.371,19.415 5.689,16.212 4.665,15.706 2.221,19.415 0,19.415 
+		3.826,15.082 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="2.859,13.992 0,16.024 0,13.804 2.225,12.822 	"/>
+</g>
+<g>
+	<polygon fill="#<?php echo $color; ?>" points="20.943,5.326 13.489,8.313 12.81,7.08 20.634,1.72 20.943,1.72 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="15.881,1.72 11.961,6.119 11.124,5.477 13.397,1.72 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="11.296,1.72 10.026,4.923 9.269,4.69 10.054,1.72 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="8.29,4.54 8.406,1.72 7.332,1.72 7.546,4.54 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="6.485,4.681 5.612,1.72 4.371,1.72 5.689,4.923 4.665,5.429 2.221,1.72 0,1.72 3.826,6.054 	"/>
+	<polygon fill="#<?php echo $color; ?>" points="2.859,7.143 0,5.11 0,7.332 2.225,8.313 	"/>
+</g>
+</svg>

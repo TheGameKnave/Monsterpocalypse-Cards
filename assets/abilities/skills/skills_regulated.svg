@@ -1,0 +1,36 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.393px" height="10.393px" viewBox="0 0 10.393 10.393" enable-background="new 0 0 10.393 10.393" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" x="0.001" width="10.392" height="10.393"/>
+<polygon fill="#FFFFFF" points="3.396,7.157 1.25,7.157 1.916,7.824 1.072,8.651 1.072,9.462 1.902,9.462 2.728,8.637 3.396,9.305 
+	"/>
+<polygon fill="#FFFFFF" points="7.228,7.148 7.228,9.295 7.895,8.629 8.722,9.473 9.532,9.473 9.532,8.643 8.707,7.816 9.375,7.148 
+	"/>
+<polygon fill="#FFFFFF" points="3.387,3.326 3.387,1.181 2.72,1.848 1.893,1.003 1.082,1.003 1.082,1.832 1.908,2.659 1.24,3.326 
+	"/>
+<polygon fill="#FFFFFF" points="7.228,3.326 9.374,3.326 8.708,2.659 9.551,1.832 9.551,1.021 8.722,1.021 7.895,1.848 7.228,1.18 
+	"/>
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" width="10.392" height="10.392"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M3.687,3.458h2.095c0.624,0,1.163,0.346,1.163,1.02
+		c0,0.37-0.169,0.759-0.534,0.895c0.3,0.114,0.485,0.445,0.525,0.89c0.014,0.175,0.02,0.6,0.119,0.765H5.956
+		c-0.054-0.18-0.075-0.365-0.09-0.55c-0.03-0.34-0.059-0.694-0.494-0.694H4.787v1.244h-1.1V3.458z M4.787,5.018h0.574
+		c0.205,0,0.485-0.035,0.485-0.355c0-0.225-0.125-0.354-0.545-0.354H4.787V5.018z"/>
+</g>
+</svg>

@@ -1,0 +1,29 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.392px" height="10.392px" viewBox="0 0 10.392 10.392" enable-background="new 0 0 10.392 10.392" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" width="10.392" height="10.392"/>
+<rect x="0.864" y="7.656" fill="#FFFFFF" width="8.658" height="1.184"/>
+<g>
+	<path fill="#FFFFFF" d="M9.563,4.692C8.925,4.688,8.026,4.364,7.148,3.961c-0.801-0.375-1.537-0.8-1.955-1.203
+		C5.1,2.85,4.994,2.938,4.875,3.025C4.536,3.276,4.09,3.539,3.607,3.784c-0.978,0.486-2.06,0.897-2.786,0.908V3.387
+		c0.435,0.009,1.39-0.307,2.237-0.715C3.902,2.28,4.706,1.745,4.849,1.515c0.014-0.021,0.016-0.029,0.019-0.031V1.482l0.111,0.033
+		h0.425l0.113-0.033l0.003,0.003C5.525,1.498,5.545,1.53,5.577,1.563C5.642,1.638,5.754,1.74,5.901,1.85
+		c0.292,0.218,0.714,0.47,1.172,0.697c0.907,0.465,2.01,0.849,2.49,0.84V4.692z"/>
+	<path fill="#FFFFFF" d="M9.563,6.933C8.925,6.927,8.026,6.606,7.148,6.204C6.347,5.829,5.611,5.403,5.193,5.001
+		C5.1,5.09,4.994,5.178,4.875,5.27C4.536,5.518,4.09,5.778,3.607,6.025C2.629,6.51,1.547,6.925,0.821,6.933V5.628
+		c0.435,0.008,1.39-0.308,2.237-0.712c0.844-0.395,1.648-0.931,1.791-1.159c0.014-0.022,0.016-0.03,0.019-0.033V3.721l0.111,0.036
+		h0.425l0.113-0.036l0.003,0.006c0.005,0.013,0.025,0.044,0.057,0.077c0.065,0.077,0.177,0.179,0.324,0.287
+		C6.193,4.309,6.615,4.56,7.073,4.789c0.907,0.464,2.01,0.85,2.49,0.839V6.933z"/>
+</g>
+</svg>

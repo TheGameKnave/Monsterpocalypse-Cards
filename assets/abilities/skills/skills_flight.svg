@@ -1,0 +1,34 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.393px" height="10.392px" viewBox="0 0 10.393 10.392" enable-background="new 0 0 10.393 10.392" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" x="0.001" width="10.392" height="10.392"/>
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" y="0.001" width="10.392" height="10.391"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M1.774,4.874c0-0.117,0.192-0.279,0.341-0.388
+		C2.208,4.417,2.33,4.386,2.416,4.408c0.587,0.161,2.989,0.823,4.879,1.358c-0.17,0.246-0.349,0.578-0.447,0.951
+		C4.95,6.412,2.203,5.963,2.091,5.921C1.922,5.856,1.778,5.062,1.774,4.874"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M3.367,8.36C3.201,8.335,2.919,7.642,2.88,7.47
+		C2.856,7.366,3.002,7.18,3.115,7.054c0.071-0.078,0.178-0.135,0.26-0.129c0.436,0.027,1.918,0.117,3.409,0.217
+		c-0.001,0.03-0.005,0.061-0.005,0.087c0,0.321,0.105,0.671,0.254,0.987C5.369,8.292,3.461,8.376,3.367,8.36"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M7.233,7.175c0-0.916,0.779-1.695,0.779-1.695
+		C7.91,5.444,1.36,3.138,1.19,3.035S1.021,2.05,1.056,1.847c0.02-0.125,0.261-0.263,0.439-0.351
+		c0.114-0.055,0.253-0.067,0.341-0.024C2.854,1.96,9.207,5.015,9.269,5.14c0.069,0.135,0,0.34,0,0.34S9.03,5.683,8.284,6.464
+		C7.538,7.243,8.453,8.771,8.453,8.771S8.207,8.953,8.048,8.839C7.686,8.579,7.233,7.812,7.233,7.175"/>
+</g>
+</svg>

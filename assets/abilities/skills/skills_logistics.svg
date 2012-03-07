@@ -1,0 +1,29 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.392px" height="10.392px" viewBox="0 0 10.392 10.392" enable-background="new 0 0 10.392 10.392" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" width="10.392" height="10.392"/>
+<rect x="3.518" y="9.158" fill="#FFFFFF" width="3.349" height="0.401"/>
+<rect x="3.518" y="8.284" fill="#FFFFFF" width="3.349" height="0.401"/>
+<g>
+	<path fill="#FFFFFF" d="M8.591,4.817C8.577,4.893,8.553,4.961,8.533,5.03C8.503,5.151,8.479,5.272,8.438,5.39
+		C8.407,5.474,8.36,5.552,8.325,5.634c-0.044,0.094-0.08,0.19-0.131,0.28c-0.048,0.085-0.109,0.16-0.162,0.24
+		C7.98,6.229,7.935,6.309,7.878,6.38C7.876,6.382,7.872,6.384,7.87,6.387c-0.002,0.007-0.008,0.012-0.01,0.017
+		C7.581,6.737,6.862,7.101,6.862,7.454c0,0.352,0.006,0.355,0.006,0.355H3.519c0,0,0.006-0.004,0.006-0.355
+		c0-0.354-0.722-0.717-0.998-1.051C2.521,6.398,2.52,6.394,2.516,6.387C2.514,6.384,2.509,6.382,2.505,6.38
+		c-0.056-0.071-0.1-0.151-0.151-0.226c-0.056-0.08-0.116-0.155-0.164-0.24c-0.051-0.09-0.088-0.187-0.13-0.28
+		C2.022,5.552,1.979,5.474,1.948,5.39C1.906,5.272,1.88,5.151,1.851,5.03C1.833,4.961,1.808,4.893,1.794,4.817
+		C1.76,4.622,1.741,4.419,1.741,4.213c0-1.905,1.546-3.452,3.452-3.452c1.907,0,3.451,1.547,3.451,3.452
+		C8.644,4.419,8.624,4.622,8.591,4.817"/>
+</g>
+</svg>

@@ -1,0 +1,30 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.584px" height="10.585px" viewBox="0 0 10.584 10.585" enable-background="new 0 0 10.584 10.585" xml:space="preserve">
+<g>
+	<defs>
+		<rect fill="#<?php echo $color; ?>" id="SVGID_1_" width="10.584" height="10.585"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path fill="#<?php echo $color; ?>" clip-path="url(#SVGID_2_)" d="M10.584,5.292c0,2.923-2.369,5.293-5.292,5.293c-2.923,0-5.293-2.37-5.293-5.293
+		C-0.001,2.37,2.369,0,5.292,0C8.215,0,10.584,2.37,10.584,5.292"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M5.901,2.608l0.007-0.499c0.041,0.005,0.261-0.006,0.413-0.084
+		C6.47,1.948,6.549,1.807,6.549,1.774c0-0.066-0.077-0.12-0.077-0.12L6.034,1.527H5.761V1.333H5.237v0.194H4.682v0.007L3.937,2.236
+		c0,0-0.216,0.14-0.216,0.521c0,0.154,0.038,0.285,0.038,0.285h0.162c0,0,0.03-0.034,0.03-0.066c0-0.022,0.005-0.151,0.006-0.228
+		l0.725-0.65v0.004h0.427v0.017L4.914,2.655C4.508,2.782,4.215,3.157,4.215,3.604v5.577h2.638V3.604
+		C6.853,3.069,6.431,2.634,5.901,2.608"/>
+</g>
+</svg>

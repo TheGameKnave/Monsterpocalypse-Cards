@@ -1,0 +1,33 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="11.073px" height="10.527px" viewBox="0 0 11.073 10.527" enable-background="new 0 0 11.073 10.527" xml:space="preserve">
+<g>
+	<path fill="#<?php echo $color; ?>" d="M1.085,5.777C1.91,7.205,3.104,8.285,4.476,8.971l-0.899,1.557c1.855-0.59,3.505-1.848,4.556-3.666
+		C8.964,5.42,9.302,3.83,9.2,2.286h1.873C9.634,0.974,7.72,0.175,5.62,0.175c-1.68,0-3.236,0.512-4.53,1.387L0.188,0
+		C-0.228,1.902,0.037,3.959,1.085,5.777"/>
+</g>
+<polygon fill="#FFFFFF"  points="7.837,2.423 7.837,1.599 7.014,1.599 4.175,4.439 4.999,5.262 "/>
+<g>
+	<path fill="#FFFFFF"  d="M3.368,4.696c-0.11-0.11-0.109-0.289,0-0.398c0.11-0.11,0.288-0.11,0.397,0l1.46,1.46
+		c0.11,0.111,0.111,0.288,0,0.398c-0.108,0.109-0.288,0.11-0.397,0L3.368,4.696z"/>
+	<path fill="#FFFFFF"  d="M3.435,5.372c-0.053-0.053-0.053-0.142,0-0.195c0.055-0.055,0.142-0.054,0.195,0l0.716,0.716
+		c0.054,0.053,0.054,0.141,0,0.195s-0.141,0.054-0.195,0L3.435,5.372z"/>
+	<path fill="#FFFFFF"  d="M3.182,5.635c-0.054-0.054-0.053-0.141,0-0.195c0.054-0.054,0.141-0.054,0.195,0l0.716,0.716
+		c0.054,0.054,0.054,0.14,0,0.196c-0.053,0.052-0.142,0.053-0.195,0L3.182,5.635z"/>
+	<path fill="#FFFFFF"  d="M2.912,5.896c-0.053-0.054-0.053-0.142,0-0.196c0.055-0.054,0.142-0.054,0.195,0l0.717,0.717
+		c0.054,0.053,0.054,0.14,0,0.194c-0.055,0.054-0.142,0.055-0.195,0L2.912,5.896z"/>
+	<path fill="#FFFFFF"  d="M3.509,6.625L2.933,6.049C2.726,6.103,2.57,6.283,2.57,6.507c0,0.265,0.216,0.481,0.482,0.481
+		C3.276,6.988,3.454,6.832,3.509,6.625"/>
+</g>
+</svg>

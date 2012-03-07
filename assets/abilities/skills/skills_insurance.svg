@@ -1,0 +1,39 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.393px" height="10.392px" viewBox="0 0 10.393 10.392" enable-background="new 0 0 10.393 10.392" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" x="0.001" width="10.392" height="10.392"/>
+<path fill="#FFFFFF" d="M5.196,7.872c-1.478,0-2.677-1.198-2.677-2.677s1.199-2.677,2.677-2.677c1.479,0,2.676,1.198,2.676,2.677
+	S6.675,7.872,5.196,7.872z M9.459,5.195c0-2.355-1.908-4.264-4.263-4.264c-2.354,0-4.263,1.909-4.263,4.264
+	c0,2.354,1.909,4.263,4.263,4.263C7.551,9.458,9.459,7.55,9.459,5.195z"/>
+<g>
+	<rect x="4.238" y="0.746" fill="#FFFFFF" width="1.846" height="0.677"/>
+	<rect fill="#<?php echo $color; ?>" x="5.983" y="0.746" width="0.195" height="2.074"/>
+	<rect fill="#<?php echo $color; ?>" x="4.154" y="0.746" width="0.195" height="2.074"/>
+</g>
+<g>
+	<rect x="8.969" y="4.237" fill="#FFFFFF" width="0.678" height="1.845"/>
+	<rect fill="#<?php echo $color; ?>" x="7.571" y="5.982" width="2.075" height="0.193"/>
+	<rect fill="#<?php echo $color; ?>" x="7.571" y="4.154" width="2.075" height="0.195"/>
+</g>
+<g>
+	<rect x="4.308" y="8.968" fill="#FFFFFF" width="1.846" height="0.678"/>
+	<rect fill="#<?php echo $color; ?>" x="4.214" y="7.57" width="0.195" height="2.075"/>
+	<rect fill="#<?php echo $color; ?>" x="6.042" y="7.57" width="0.195" height="2.075"/>
+</g>
+<g>
+	<rect x="0.747" y="4.307" fill="#FFFFFF" width="0.678" height="1.846"/>
+	<rect fill="#<?php echo $color; ?>" x="0.747" y="4.213" width="2.074" height="0.195"/>
+	<rect fill="#<?php echo $color; ?>" x="0.747" y="6.043" width="2.074" height="0.193"/>
+</g>
+</svg>

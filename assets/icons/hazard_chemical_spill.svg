@@ -1,0 +1,41 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.392px" height="10.393px" viewBox="0 0 10.392 10.393" enable-background="new 0 0 10.392 10.393" xml:space="preserve">
+<rect fill="#<?php echo $color; ?>" width="10.392" height="10.393"/>
+<path fill="#FFFFFF" d="M7.671,1.817H5.597l0.35,0.351v2.466l-2.378,3.2h1.84L4.92,7.035l0.926-0.377l0.5-1.238v1.627l-0.388,0.2
+	l0.425,0.587h3.328l-2.389-3.2V2.168L7.671,1.817z"/>
+<path fill="#FFFFFF" d="M6.182,8.053h1.813c0,0,1.24,0.195,1.031,0.891C8.838,9.568,5.729,9.787,4.229,9.771
+	S1.251,9.819,1.275,9.131c0.016-0.438,0.81-0.172,0.828-0.422C2.135,8.279,0.65,8.584,0.65,8.131c0-0.497,1.661-0.697,2.453-0.406
+	C3.32,7.804,3.38,7.979,3.635,8.021c0.458,0.077,2.031,0.047,2.031,0.047L5.385,7.115l0.672-0.328L5.713,7.24L6.182,8.053"/>
+<path fill="#<?php echo $color; ?>" d="M3.916,8.998c0,0.219-0.176,0.461-0.504,0.461S2.9,9.303,2.9,8.998c0-0.227,0.141-0.461,0.512-0.461
+	C3.838,8.537,3.916,8.889,3.916,8.998z"/>
+<path fill="#<?php echo $color; ?>" d="M2.822,8.201c0,0.141-0.101,0.297-0.287,0.297S2.244,8.397,2.244,8.201c0-0.146,0.08-0.296,0.291-0.296
+	C2.778,7.905,2.822,8.131,2.822,8.201z"/>
+<circle fill="#FFFFFF" cx="3.229" cy="5.549" r="0.859"/>
+<circle fill="#<?php echo $color; ?>" cx="3.24" cy="5.549" r="0.613"/>
+<circle fill="#FFFFFF" cx="2.643" cy="1.436" r="1.273"/>
+<circle fill="#<?php echo $color; ?>" cx="2.643" cy="1.436" r="0.969"/>
+<circle fill="#FFFFFF" cx="3.643" cy="3.342" r="0.523"/>
+<circle fill="#<?php echo $color; ?>" cx="3.643" cy="3.357" r="0.351"/>
+<circle fill="#FFFFFF" cx="1.701" cy="3.994" r="0.762"/>
+<circle fill="#<?php echo $color; ?>" cx="1.701" cy="3.994" r="0.535"/>
+<circle fill="#FFFFFF" cx="1.963" cy="6.928" r="0.594"/>
+<circle fill="#<?php echo $color; ?>" cx="1.958" cy="6.923" r="0.413"/>
+<path fill="#FFFFFF" d="M3.275,1.24c0,0.155-0.126,0.281-0.281,0.281l0,0c-0.155,0-0.281-0.126-0.281-0.281V1.1
+	c0-0.155,0.126-0.281,0.281-0.281l0,0c0.155,0,0.281,0.126,0.281,0.281V1.24z"/>
+<path fill="#FFFFFF" d="M2.135,3.943c0,0.095-0.077,0.172-0.172,0.172l0,0c-0.095,0-0.172-0.077-0.172-0.172V3.865
+	c0-0.095,0.077-0.172,0.172-0.172l0,0c0.095,0,0.172,0.077,0.172,0.172V3.943z"/>
+<path fill="#FFFFFF" d="M3.685,5.45c0,0.108-0.088,0.196-0.197,0.196l0,0c-0.108,0-0.196-0.088-0.196-0.196V5.354
+	c0-0.108,0.088-0.196,0.196-0.196l0,0c0.109,0,0.197,0.088,0.197,0.196V5.45z"/>
+</svg>

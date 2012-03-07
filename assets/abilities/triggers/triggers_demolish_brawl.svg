@@ -1,0 +1,54 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.689px" height="10.69px" viewBox="0 0 10.689 10.69" enable-background="new 0 0 10.689 10.69" xml:space="preserve">
+<g>
+	<path fill="#<?php echo $color; ?>" d="M10.267,5.346c0-1.031-0.319-1.988-0.858-2.777L10.689,0L8.125,1.283C7.33,0.741,6.376,0.425,5.344,0.425
+		c-1.031,0-1.986,0.316-2.779,0.858L0,0l1.284,2.568C0.741,3.357,0.422,4.314,0.422,5.346c0,1.028,0.319,1.988,0.862,2.778L0,10.69
+		l2.564-1.284c0.793,0.543,1.748,0.86,2.779,0.86c1.032,0,1.986-0.317,2.781-0.86l2.564,1.284L9.408,8.124
+		C9.947,7.334,10.267,6.374,10.267,5.346"/>
+</g>
+<polygon fill="#FFFFFF"  points="7.898,7.736 7.434,8.147 8.2,8.453 8.2,7.471 "/>
+<polygon fill="#FFFFFF"  points="2.327,8.463 3.12,8.147 2.327,7.448 "/>
+<polygon fill="#FFFFFF"  points="3.56,7.311 3.169,5.926 4.469,6.521 5.278,4.834 6.088,6.521 7.386,5.927 6.996,7.311 8.199,7.445 
+	8.199,1.884 6.115,1.884 6.115,3.85 4.601,3.85 4.601,2.768 2.327,2.768 2.327,7.446 2.762,7.398 "/>
+<polygon fill="#FFFFFF"  points="4.135,8.566 3.902,8.659 3.738,8.725 5.235,8.969 6.807,8.722 6.419,8.566 6.605,8.401 6.902,8.138 
+	6.253,8.066 6.302,7.889 6.48,7.251 5.774,7.574 5.278,6.535 4.779,7.574 4.074,7.251 4.303,8.066 4.121,8.085 3.65,8.138 
+	3.946,8.401 "/>
+<path fill="#<?php echo $color; ?>" d="M2.327,7.448L2.327,7.448L2.327,7.448z"/>
+<polygon fill="#<?php echo $color; ?>" points="8.199,7.473 8.227,7.449 8.199,7.446 "/>
+<rect fill="#<?php echo $color; ?>" x="6.378" y="2.211" width="0.348" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.966" y="2.211" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="7.554" y="2.211" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.378" y="3.007" width="0.348" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.966" y="3.007" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="7.554" y="3.007" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.378" y="3.802" width="0.348" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.966" y="3.802" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="7.554" y="3.802" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.378" y="4.597" width="0.348" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.966" y="4.597" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="7.554" y="4.597" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="2.718" y="3.061" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="3.306" y="3.061" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="3.895" y="3.061" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="2.718" y="3.855" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="3.306" y="3.855" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="3.895" y="3.855" width="0.349" height="0.458"/>
+<rect fill="#<?php echo $color; ?>" x="2.718" y="4.597" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="3.306" y="4.597" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="3.895" y="4.597" width="0.349" height="0.457"/>
+<rect fill="#<?php echo $color; ?>" x="6.378" y="5.393" width="0.348" height="0.456"/>
+<rect fill="#<?php echo $color; ?>" x="6.966" y="5.393" width="0.349" height="0.456"/>
+<rect fill="#<?php echo $color; ?>" x="7.554" y="5.393" width="0.349" height="0.456"/>
+</svg>

@@ -1,0 +1,29 @@
+<?php
+if(!isset($color) || $color=="" || strtolower($color)=="black"){$color="000";}
+if(strtolower($color)=="red"){$color="ed1c24";}
+if(strtolower($color)=="blue"){$color="1c75bc";}
+if(strtolower($color)=="green"){$color="00a651";}
+if(strtolower($color)=="white"){$color="fff";}
+header('Content-Type: text/xml');
+// echo xml tag just in case short_open_tags is enabled in PHP config
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="10.894px" height="10.873px" viewBox="0 0 10.894 10.873" enable-background="new 0 0 10.894 10.873" xml:space="preserve">
+<polygon fill="#<?php echo $color; ?>" points="0.021,10.873 1.381,8.828 0,6.711 1.381,5.436 0.021,1.36 3.417,2.717 5.457,0 7.497,2.717 10.894,1.36 
+	9.533,5.436 10.894,6.793 9.533,8.828 10.894,10.873 "/>
+<rect x="6.224" y="3.24" transform="matrix(0.7074 0.7069 -0.7069 0.7074 4.5275 -3.6848)" fill="#FFFFFF"  width="0.979" height="0.771"/>
+<rect x="6.004" y="3.158" transform="matrix(0.7065 0.7077 -0.7077 0.7065 4.7416 -3.19)" fill="#FFFFFF"  width="0.426" height="1.928"/>
+<rect x="7.65" y="3.767" transform="matrix(0.7074 0.7069 -0.7069 0.7074 5.317 -4.5381)" fill="#FFFFFF"  width="0.977" height="0.771"/>
+<rect x="7.222" y="3.598" transform="matrix(0.7048 0.7094 -0.7094 0.7048 5.6411 -3.8397)" fill="#FFFFFF"  width="0.425" height="2.52"/>
+<polygon fill="#FFFFFF"  points="4.837,9.105 4.755,9.024 2.381,6.652 2.301,6.57 2.381,6.487 4.755,4.115 4.837,4.034 4.919,4.115 
+	7.292,6.487 7.374,6.57 7.292,6.652 4.919,9.024 "/>
+<path fill="#<?php echo $color; ?>" d="M4.837,4.197l2.372,2.372L4.837,8.942L2.464,6.569L4.837,4.197z M4.837,3.87L4.675,4.034L2.301,6.405L2.138,6.569
+	l0.163,0.164l2.374,2.372l0.163,0.163l0.164-0.163l2.372-2.372l0.163-0.164L7.374,6.405L5.001,4.034L4.837,3.87z"/>
+<polygon fill="#FFFFFF"  points="5.552,7.119 4.328,9.4 6.776,9.4 "/>
+<path fill="#<?php echo $color; ?>" d="M4.037,9.575l1.362-2.538l0.153-0.284l1.513,2.822H4.037z M4.617,9.228h1.869L5.552,7.486L4.617,9.228z M5.398,7.201
+	l0.154-0.082L5.398,7.201z"/>
+<rect x="3.431" y="9.207" fill="#FFFFFF"  width="4.241" height="0.881"/>
+</svg>
