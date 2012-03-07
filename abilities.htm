@@ -1,0 +1,56 @@
+<?
+
+if(!isset($language) || $language == ""){
+	$language = "english";
+}
+
+
+?>
+
+<html>
+ <head>
+	<title>Monsterpocalypse Abilities - <?= ucfirst($language) ?> Lanugage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<? if($language === "japanese"){print("<meta http-equiv=\"content-type\" content=\"text/html; charset=shift_jis\" />");} ?>
+	<link rel="shortcut icon" href="images/style/favicon.ico" />
+	<link href="include/monsterpocalypse.css" media="screen,print" rel="stylesheet" type="text/css" />
+	
+	<style type="text/css">
+
+#container {width:950px;}
+.text {width:850px;}
+.category {padding-top:300px;}
+.category:first-child {padding-top:0px;}
+<? if($language === "japanese"){print(".text, .category {font-family:\"Lucida Grande\",\"メイリオ\",\"ＭＳ Ｐゴシック\",sans-serif !important;} .text strong {font-family:\"Black\";} .text em {font-family:\"Bold\";}    ");} ?>
+	</style>
+<?php 
+
+include('include/monpoc_abilities.php');
+include('include/monpoc_functions.php');
+if($language !== "english"){
+             include("include/localization/".$language.".php");
+}
+
+?>
+ </head>
+<body id="body">
+<div id="container" class="abilities list">
+
+
+<?php
+
+foreach($abilities as $category => $contents){
+	if($category === "triggers"){$trig="blast";}else{$trig = "";}
+	$j = array_search($category,$abilityOrder['english']);
+	print("<p class=\"category\">".$abilityOrder[$language][$j]."</p>");
+	foreach($contents as $title => $text){
+		ability($category,uscore($title),"black",$trig);
+	}
+
+
+}
+
+?>
+
+
+

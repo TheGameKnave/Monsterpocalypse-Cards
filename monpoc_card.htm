@@ -1,0 +1,101 @@
+<?
+if(!isset($format)||$format===""){$format="card";}
+
+if(!isset($language) || $language == ""){
+	$language = "english";
+}
+?>
+
+<html>
+ <head>
+	<title>Monsterpocalypse Card Styling Test</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<? if($language === "japanese"){print("<meta http-equiv=\"content-type\" content=\"text/html; charset=shift_jis\" />");} ?>
+	<link rel="shortcut icon" href="images/style/favicon.ico" />
+	<link href="include/monsterpocalypse.css" media="screen,print" rel="stylesheet" type="text/css" />
+	
+	<style type="text/css">
+
+	a.link{font-size:35px;text-decoration:none;opacity: 0.65;float:right;margin-right:5px;margin-top:15px;}
+<? if($language === "japanese"){print(".text, .category {font-family:\"Lucida Grande\",\"メイリオ\",\"ＭＳ Ｐゴシック\",sans-serif !important;} .text strong {font-family:\"Black\";} .text em {font-family:\"Bold\";}    ");} ?>
+
+	</style>
+<?php 
+
+include('include/monpoc_abilities.php');
+include('include/monpoc_functions.php');
+include('include/monpoc_figures.php');
+if($language !== "english"){
+             include("include/localization/".$language.".php");
+}
+
+
+?>
+ </head>
+<body id="body">
+
+
+<?php
+
+
+
+//echo "<pre>";
+//print_r($figures);
+//echo "</pre>";
+?>
+
+
+<?php 
+
+if(!isset($format)||$format===""){$format="card";}
+
+if($faction){
+	$faction=uscore($faction);
+	foreach($figures as $f => $s){
+		$go = 1;
+		if( (uscore($type)=='unit' && uscore($s['type'])!='unit') || (uscore($type)=='monster' && uscore($s['type'])!='monster' && uscore($s['type'])!='building' && uscore($s['type'])!='character' ) ){$go = 0;}
+		if( (uscore($type)=='building' && uscore($s['type'])!='building') ){$go = 0;}
+		if(uscore($s['faction'])==uscore($faction) && $go){
+			build($s,$format,$language);
+		}
+	}
+}elseif($figure){
+	$figure=uscore($figure);
+	foreach($figures as $f => $s){
+		if(strpos(uscore($f),uscore($figure))!==false){
+			build($s,$format,$language);
+		}
+	}
+}elseif($ability){
+	foreach($figures as $f => $s){
+		foreach ($s['abilities'] as $ab => $i){
+			if(uscore($ab)==uscore($ability)){
+				build($s,$format,$language);
+			}
+		}
+	}
+}else{
+	$d = dir_list('assets/figures');
+	asort($d);
+	foreach($d as $fc){
+		if(strtolower($fc) == "g.u.a.r.d"){$fc = "G.U.A.R.D.";}
+		if(strtolower($fc) == "neutral"){$type = "faction=".strtolower($fc)."&type=building\">Buildings";}else{$type = "faction=".strtolower($fc)."&type=monster\">Monsters";}
+		print("<a style=\"color:#fff;text-decoration:none;outline:none;margin-bottom:10px;\" href=\"?language=".$language."&format=".$format."&faction=".strtolower($fc)."\"><div class='card' style=\"background:url('assets/backgrounds/".strtolower($fc).".jpg');height:80px;margin:10px;\">
+
+	<p class='title' style='font-size:45px;'>".ucname(str_replace("_"," ",$fc))." ");
+
+		print("<a class='link' style='color:#ed1c24;' href=\"?language=".$language."&".$type."</a> <a class='link' style='color:#1c75bc;' href=\"?language=".$language."&faction=".strtolower($fc)."&type=unit\">Units</a></p>
+</div></a>
+
+");
+	}
+}
+
+
+ ?>
+
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+ <head>
+	<title>Monsterpocalypse Card Styling Test</title>
+	
+	<link rel="shortcut icon" href="images/style/favicon.ico" />
+	<link href="include/monsterpocalypse.css" media="screen,print" rel="stylesheet" type="text/css" />
+	
+	<style type="text/css">
+
+#container {width:1150px;}
+.text {width:1050px;}
+.category {padding-top:300px;}
+.category:first-child {padding-top:0px;}
+
+	</style>
+<?php 
+
+
+include('include/monpoc_functions.php');
+include('include/monpoc_figures.php');
+include('include/monpoc_abilities.php');
+
+?>
+ </head>
+<body id="body" bgcolor="#F1EAE2">
+<div id="container" class="abilities">
+
+
+<?php
+
+$icons = scandir('assets/icons');
+
+
+foreach($icons as $icon){
+	
+	print("<object data=\"assets/icons/".$icon."\" height=\"45\"></object>");
+
+
+
+}
+
+?>
+
+
+
+<?php
+/*
+	$d = dir_list('assets/figures');
+	asort($d);
+	foreach($d as $fc){
+		foreach($figures as $name => $figure){
+			if(uscore($fc) == uscore($figure['faction'])){
+				print($name." <b>".$figure['name']."</b><br>");
+			}
+		}
+	}
+*/
+?>
+
+
+
+<?php
+/*
+foreach($figures as $name => $stats){
+	foreach($stats['abilities'] as $ability => $text){
+		$t=0;
+		foreach($abilities as $category => $array){
+				if(array_key_exists(uscore($ability),$array)){$t=1;}
+		}
+		if(!$t){echo $name."<br>".$ability;}
+	}
+		echo "<br><br>";
+	
+}
+*/
+?>
+
+
+
+
+<?php
+/*
+foreach($figures as $name => $stats){
+        $skip=0;
+	$test = uscore($stats['name']);
+	if($stats['form']){$test .="_".uscore($stats['form']);}elseif(uscore($stats['class'])=="elite"){$test .="_".uscore($stats['class']);}
+	if(uscore($stats['form'])=="alpha" || $name == $test){$skip=1;}
+	if(!$skip){print($name." ".$test."<br>");}
+
+
+}
+*/
+?>
+
+
+
+
+
+
+</div>
+</body>
+</html>

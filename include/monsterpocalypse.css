@@ -1,0 +1,203 @@
+
+@font-face {font-family: "Title";src: url(../assets/agencyfb-bold.ttf) format("truetype");}
+@font-face {font-family: "Text";src: url(../assets/ITCFranklinGothicStd-Book.otf) format("opentype");}
+@font-face {font-family: "Bold";src: url(../assets/ITCFranklinGothicStd-Demi.otf) format("opentype");}
+@font-face {font-family: "Black";src: url(../assets/ITCFranklinGothicStd-Hvy.otf) format("opentype");}
+@font-face {font-family: "stat";src: url(../assets/nimbus_sans_l_regular.ttf) format("truetype")}
+@font-face {font-family: "statBold";src: url(../assets/nimbus_sans_l_bold.ttf) format("truetype")}
+@font-face {font-family: "statCondensed";src: url(../assets/nimbus_sans_l_regular_condensed.ttf) format("truetype")}
+/* Defaults *************************************************************** Defaults */
+
+* {margin:0; padding:0;}
+.clear {clear:both;}
+.test {border-top:1px dotted;border-bottom:1px dotted;background:#567890;}
+.nowrap {white-space: nowrap;}
+
+body {background:#eee}
+
+.faction p.title {font-size:50px;height:60px;color:#fff;font-family: "Title";padding:40px 0px 5px 44px;letter-spacing:2px;text-shadow: #000 2px 2px 2px;}
+oobject {width:15px !important}
+
+/* ABILITY LIST ***************************************************************** ABILITY LIST */
+
+
+
+
+.abilities.list {width:788px;height:1088px;position:relative;float:left;font-family: "Text";}
+.abilities.list .ability {font-family: "Text";}
+
+.abilities.list {font-size:24px;line-height:26px;width:435px;float:left;}
+.abilities.list .category {margin-top:12px;font-size:22px;letter-spacing:1px;font-family:"Title";border-bottom:2px solid #000;text-transform:uppercase;}
+.abilities.list .abilities p:first-child {margin:0; padding:0;}
+.abilities.list .ability {margin-top:9px;}
+.abilities.list .icon {width:56px;height:56px;background:#fff;border:2px solid #000;float:left;margin-bottom:5px;}
+.abilities.list .icon object {height:40px;margin:8px;}
+.abilities.list .text {padding-left:10px;float:left;}
+.abilities.list .text object {height:24px;vertical-align:middle;margin-right:-1px;}
+.abilities.list .text strong {font-family:"Black";text-transform:uppercase;font-weight:normal}
+.abilities.list .text .span object {height:20px;}
+.abilities.list .text em {font-family:"Bold";font-style:normal;}
+.abilities.list .text i, .card .footnote {font-size:20px;line-height:21px;font-family:"Bold";}
+.abilities.list .text span.die {font-size:20px;padding:0 6px;border:2px solid #000;font-family:"Bold"}
+.abilities.list .p-die {background:#ed1c24;color:#fff;}
+.abilities.list .b-die {background:#1c75bc;color:#fff;}
+.abilities.list .a-die {background:#fff;}
+.abilities.list p.footnote {margin-top:3px;}
+
+
+
+
+/* CARD ***************************************************************** CARD */
+
+
+
+
+.card {width:788px;height:1088px;position:relative;float:left;font-family: "Text";}
+.card .ability {font-family: "Text";}
+
+.card p.title {font-size:50px;height:60px;color:#fff;font-family: "Title";padding:40px 0px 5px 44px;letter-spacing:2px;text-shadow: #000 2px 2px 2px;}
+.card p.red {color:#ed1c24;}
+.card .title span {font-size:35px;letter-spacing:5px;padding-left:25px;text-shadow: #000 0px 0px 8px;}
+.card .title .shadow {color:#999;text-shadow: #000 0px 0px 8px;}
+.card .title .glass {color:#ccc;text-shadow: #000 0px 0px 12px;}
+
+.card .content {padding:20px 44px 45px;background: 0 0 no-repeat}
+
+.card .stats {font-family: "Black";width:265px;float:left;padding-top:310px;}
+.card .stats object, .stats td.statValue {height:60px;}
+.card .statName {font-size:35px;}
+.card .statValue, .card .statBoost, .card .statRange {text-align:center;width:70px;padding-right:15px;}
+.card .statRange, .card .statBoost, .card .statBoost object {height:18px;text-align:center;}
+.card .statBoost {font-size:24px;line-height:24px;padding-bottom:13px;color:#1c75bc;height:37px;}
+.card .statRange object {height:10px;}
+.card .statSpeed td, .card .statDefense td, .card .statHealth td, .card .statEnergy td {padding-bottom:20px;}
+.card .statValue div {position:relative;}
+.card .statValue div p {font-size:35px;color:#fff;position:absolute;width:70px;}
+.card .statSpeed object,.statPower object {padding-left:7px;}
+.card .statCost object {padding-right:5px;}
+.card .statSpeed p {top:10px}
+.card .statDefense p {top:8px}
+.card .statEnergy p {top:10px}
+.card .statBrawl p {top:10px}
+.card .statBlast p {top:15px}
+.card .statPower p {top:6px}
+.card .statHealth p {top:8px}
+.card .statHyper p {top:10px}
+.card .statHyper p.red {color:#ed1c24;}
+.card .statCost div p {top:10px;color:#000;}
+
+.card .abilities {font-size:24px;line-height:26px;width:435px;float:left;}
+.card .category {margin-top:12px;font-size:22px;letter-spacing:1px;font-family:"Title";border-bottom:2px solid #000;text-transform:uppercase;}
+.card .abilities p:first-child {margin:0; padding:0;}
+.card .ability {margin-top:9px;}
+.card .icon {width:56px;height:56px;background:#fff;border:2px solid #000;float:left;margin-bottom:5px;}
+.card .icon object {height:40px;margin:8px;}
+.card .text {width:365px;padding-left:10px;float:left;}
+.card .text object {height:24px;vertical-align:middle;margin-right:-1px;}
+.card .text strong {font-family:"Black";text-transform:uppercase;font-weight:normal}
+.card .text .span object {height:20px;}
+.card .text em {font-family:"Bold";font-style:normal;}
+.card .text i, .card .footnote {font-size:20px;line-height:21px;font-family:"Bold";}
+.card .text span.die {font-size:20px;padding:0 6px;border:2px solid #000;font-family:"Bold"}
+.card .p-die {background:#ed1c24;color:#fff;}
+.card .b-die {background:#1c75bc;color:#fff;}
+.card .a-die {background:#fff;}
+.card p.footnote {margin-top:3px;}
+
+.card .attributes {position:absolute;bottom:45px;right:44px;width:500px;}
+.card .attributes object {height:65px;padding-left:25px;float:right;}
+.card .set {width:105px;text-align:right;float:right;}
+.card .set object {height:50px;padding:0 1px;float:none;}
+.card .rarity object {height:15px;padding:0 2px; 0}
+
+.insert_front > div {z-index:3}
+.insert-front > img {z-index:1}
+.insert-front {background:#fff}
+
+.insert_front.large {width:645px;height:645px;background:#fff ;-moz-border-radius: 40px 40px 40px 0;border: 2px solid #eee;position:relative;float:left}
+.insert_front.large .title {-moz-transform: rotate(180deg);font-weight:bold;letter-spacing:-2px;width:100%;height:50px;position:absolute;top:20px;text-align:center;line-height:50px;text-transform:uppercase;font-family: "statCondensed";font-size: 35px}
+#body .insert_front.large .long_title {font-size:29px}
+
+.insert_front.large .stats {width:80px;height:435px;position:absolute;top:112px;left:33px;}
+.insert_front.large .stats {font-family: "statBold";}
+.insert_front.large .stats object{height:60px;}
+.insert_front.large .statDefense td, .insert_front.large .statDefense object, .insert_front.large .statBrawl .statValue object, .insert_front.large .statBlast .statValue object, .insert_front.large .stats td.statValue  {height:50px;}
+.insert_front.large .statValue, .insert_front.large .statBoost, .insert_front.large .statRange {text-align:center;width:70px;}
+.insert_front.large .statName {display: none;}
+.insert_front.large .statBrawl .statValue object {height:54px !important}
+.insert_front.large .statRange, .insert_front.large .statBoost, .insert_front.large .statBoost object {height:16px;text-align:center;}
+.insert_front.large .statBoost {font-size:24px;line-height:18px;padding-bottom:5px;color:#1c75bc;height:16px;}
+.insert_front.large .statRange object {height:10px;}
+.insert_front.large .statSpeed td, .insert_front.large .statDefense td, .insert_front.large .statHealth td, .insert_front.large .statEnergy td {padding-bottom:5px;}
+.insert_front.large .statValue div {position:relative;}
+.insert_front.large .statValue div p {font-size:45px;color:#fff;position:absolute;width:70px;}
+.insert_front.large .statCost object {padding-right:5px;}
+.insert_front.large .statSpeed p {top:3px;right:3px}
+.insert_front.large .statDefense p {top:-2px;right:1px;}
+.insert_front.large .statEnergy p {top:2px}
+.insert_front.large .statBrawl p {top:0px}
+.insert_front.large .statBlast p {top:3px}
+.insert_front.large .statPower p {top:-1px;right:1px}
+.insert_front.large .statHealth p {top:1px}
+.insert_front.large .statHyper p {top:10px}
+.insert_front.large .statHyper p.red {color:#ed1c24;}
+.insert_front.large .statCost div p {top:10px;color:#000;}
+
+.insert_front.large .abilities {width:80px;height:435px;position:absolute;top:120px;right:11px;}
+.insert_front.large .abilities object {display:block;height: 56px;margin-bottom: 14px;}
+
+.insert_front.large .attributes {width:400px;height:50px;position:absolute;bottom:15px;left:107px;}
+.insert_front.large .attributes object {float:right;height: 40px;padding: 0 24px;}
+.insert_front.large .attributes div {position: relative;float: right;}
+.insert_front.large .attributes div p{font-family: "statBold";position: absolute;top:3px;font-size: 28px;width: 100%;text-align:center;}
+.insert_front.large .attributes .hyper {color: white;}
+
+.insert_front.large img {position:absolute;top:130px;left:150px;max-height:430px;max-width:430px;}
+
+.insert_front.large .notch {position:absolute;bottom:0;left:0;height:70px;width:110px;background:#eee;}
+
+
+
+
+
+.insert_front.small {width:330px;height:330px;background:#fff;-moz-border-radius: 20px 20px 20px 0;border: 2px solid #eee;position:relative;float:left}
+.insert_front.small .title {-moz-transform: rotate(180deg);letter-spacing:-1px;width:100%;height:35px;width:200px;margin:0 auto;text-align:center;text-transform:uppercase;font-family: "statCondensed";font-size: 21px;font-weight:bold;line-height: 14px}
+.insert_front.small .title.elite {color:#ed1c24;}
+.insert_front.small .title.elite span, .insert_front.small .title.cost {font-size: 14px}
+#body .insert_front.small .long_title {font-size:19px}
+.insert_front.small .title.cost span {font-size: 21px}
+
+.insert_front.small .stats {width:80px;height:235px;position:absolute;top:68px;left:-5px;}
+.insert_front.small .stats {font-family: "statBold";}
+.insert_front.small .stats object{height:40px;}
+.insert_front.small .statDefense td, .insert_front.small .statDefense object, .insert_front.small .statBrawl .statValue object, .insert_front.small .statBlast .statValue object, .insert_front.small .stats td.statValue  {height:33px;}
+.insert_front.small .statValue, .insert_front.small .statBoost, .insert_front.small .statRange {text-align:center;width:70px;}
+.insert_front.small .statName {display: none;}
+.insert_front.small .statBrawl .statValue object {height:35px !important}
+.insert_front.small .statRange, .insert_front.small .statBoost, .insert_front.small .statBoost object {height:12px;text-align:center;}
+.insert_front.small .statBoost {font-size:17px;line-height:11px;padding-bottom:4px;color:#1c75bc;height:16px;}
+.insert_front.small .statRange object {height:6px;}
+.insert_front.small .statSpeed td, .insert_front.small .statDefense td, .insert_front.small .statHealth td, .insert_front.small .statEnergy td {padding-bottom:5px;}
+.insert_front.small .statValue div {position:relative;}
+.insert_front.small .statValue div p {font-size:31px;color:#fff;position:absolute;width:70px;}
+.insert_front.small .statCost object {padding-right:5px;}
+.insert_front.small .statSpeed p {top:2px;right:3px}
+.insert_front.small .statDefense p {top:-3px;right:1px;}
+.insert_front.small .statEnergy p {top:2px}
+.insert_front.small .statBrawl p {top:-2px}
+.insert_front.small .statBlast p {top:0px}
+.insert_front.small .statHealth p {top:1px}
+.insert_front.small .statCost div p {top:10px;color:#000;}
+
+.insert_front.small .abilities {width:40px;height:235px;position:absolute;top:69px;right:13px;}
+.insert_front.small .abilities object {display:block;height: 40px;margin-bottom: 9px;}
+
+.insert_front.small .attributes {width:210px;height:45px;position:absolute;bottom:8px;left:50px;}
+.insert_front.small .attributes object {float:right;height: 35px;padding: 0 7px 0 6px;}
+.insert_front.small .attributes div {position: relative;float: right;}
+.insert_front.small .attributes div p{font-family: "statBold";position: absolute;top:2px;font-size: 25px;width: 100%;text-align:center;}
+.insert_front.small .attributes .hyper {color: white;}
+
+.insert_front.small img {position:absolute;top:30px;left:50px;max-width: 210px;max-height: 240px;}
+
+.insert_front.small .notch {position:absolute;bottom:0;left:0;height:65px;width:60px;background:#eee;}

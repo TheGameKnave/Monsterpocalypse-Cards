@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			}
+		.page {
+			width: 5400px;
+			height: 3600px;
+			position: relative;
+			background-color: #fff;
+			background-image: url("assets/cards/pod_template.png");
+			}
+		.group {
+			width: 4728px;
+			height: 3264px;
+			position: absolute;
+			top: 167px;
+			left: 580px;
+			}
+		
+	</style>
+</head>
+
+<body>
+
+<?php
+	include('include/monpoc_functions.php');
+	include('include/monpoc_figures.php');
+	$display = array();
+	if(!isset($page)){$page = 0;}
+
+	foreach($figures as $name => $stat){
+		$display[] = $name;
+	}
+	if(!isset($language) || $language == ""){
+		$language = "english";
+	}
+
+
+	print('
+	<div class="page">
+		<div class="group">
+');
+	foreach($display as $k => $v){
+		if($k >= (($page)*18) && $k <= (($page+1)*18-1)){
+			print('<img src="assets/cards_original/'.$language.'/'.uscore($figures[$v]['faction']).'/'.$v.'.jpg">');
+		}
+	}
+	print('
+		</div>
+	</div>');
+
+
+?>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			}
+		.page {
+			width: 3150px;
+			height: 2397px;
+			overflow: hidden;
+			border-bottom: 3px dashed black;
+			position: relative;
+			background-color: #f8f8f8
+			}
+		.group {
+			width: 3152px;
+			height: 2176px;
+			position: absolute;
+			top: 100px;
+			}
+		.overlay {
+			position: absolute;
+			background-image: url("assets/cards/8.5x11_template.png");
+			width: 3152px;
+			height: 2176px;
+			top: 100px;
+			}
+		
+	</style>
+</head>
+
+<body>
+
+<?php
+	include('include/monpoc_functions.php');
+	include('include/monpoc_figures.php');
+	
+	if(!isset($language) || $language == ""){
+		$language = "english";
+	}
+	
+	$display = array();
+	if($type=='monster' && uscore($faction) != 'neutral'){
+		foreach($figures as $name => $stats){
+			if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'monster' ){
+				$display[] = $name;
+			}
+		}
+		foreach($figures as $name => $stats){
+			if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'building' ){
+				$display[] = $name;
+			}
+		}
+		foreach($figures as $name => $stats){
+			if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'character' ){
+				$display[] = $name;
+			}
+		}
+	}elseif(uscore($faction) == 'neutral'){
+		if($type!="ref"){
+			foreach($figures as $name => $stats){
+				if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'building' ){
+					$display[] = $name;
+				}
+			}
+			foreach($figures as $name => $stats){
+				if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'unit' ){
+					$display[] = $name;
+				}
+			}
+		}else{
+			foreach($figures as $name => $stats){
+				if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'reference' ){
+					$display[] = $name;
+				}
+			}
+			foreach($figures as $name => $stats){
+				if( strpos(uscore($stats['faction']),uscore($faction)) !== false && $stats['type'] === 'map' ){
+					$display[] = $name;
+				}
+			}
+		}
+	}else{
+		foreach($figures as $name => $stats){
+			if( strpos(uscore($stats['faction']),uscore($faction)) !== false && ( $stats['type'] === $type || !isset($type) ) ){
+				$display[] = $name;
+			}
+		}
+	}
+
+
+
+for($i=0;$i<count($display);$i+=8){
+	print('
+	<div class="page">
+		<div class="group">
+');
+	foreach($display as $k => $v){
+		if($k >= $i && $k <= ($i+7)){
+			print('<img src="assets/cards_original/'.$language.'/'.uscore($figures[$v]['faction']).'/'.$v.'.jpg">');
+		}
+	}
+	print('
+		</div>
+		<div class="overlay">&nbsp;</div>
+	</div>');
+}
+
+?>
+</body>
+</html>

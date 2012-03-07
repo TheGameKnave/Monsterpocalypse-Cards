@@ -1,0 +1,260 @@
+<html>
+ <head>
+	<title>Monsterpocalypse Ability Cards</title>
+
+	<link rel="shortcut icon" href="images/style/favicon.ico" />
+	<link href="include/monsterpocalypse.css" media="screen,print" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+
+	div.faction {position: relative;float:left}
+	div.header {position: absolute; width:495px;}
+	a {color:#ffffff;text-decoration:none;}
+	a.monster, a.unit{font-size:25px;opacity: 0.8;float:right;margin-right:7px;margin-top:7px;}
+	div.faction .title {font-size: 30px;padding: 25px 0 0 15px}
+	div.faction img {width:495px;}
+	div.faction p {width:auto;height:auto;}
+	form {margin:20px 0;}
+	form p {width:280px; float:left; margin:5px 0}
+	form label {width: 90px; text-align:right; float:left; margin-right: 5px;}
+	form.submit {text-align: center;}
+	.footer {border-top: 1px solid gray; clear:both; position:relative; top:20px; padding:10px 100px 30px;}
+	.footer a { color: gray; font-size: 11px; text-decoration: none;}
+	.footer a:hover {color:#66bbff;}
+
+	</style>
+<?php
+
+include('include/monpoc_abilities.php');
+include('include/monpoc_functions.php');
+include('include/monpoc_figures.php');
+
+if(!isset($language) || $language == ""){
+  $language="english";
+}
+if(!isset($format) || $format == ""){
+  $format="card";
+}
+		if($format==="insert"){
+			$languageDir = "";
+		}else{
+			$languageDir = "/".$language;
+		}
+?>
+ </head>
+<body>
+<?php
+
+
+
+
+if( 
+isset($limited) || 
+isset($figure) || 
+isset($type) ||
+isset($hazard) ||
+isset($form) ||
+isset($class) ||
+isset($faction) ||
+isset($agenda) ||
+isset($energytype) ||
+isset($set) ||
+isset($setcolor) ||
+isset($rarity) ||
+isset($speed) ||
+isset($defense) ||
+isset($energy) ||
+isset($brawl) ||
+isset($brawlboost) ||
+isset($blast) ||
+isset($blastboost) ||
+isset($blastrange) ||
+isset($power) ||
+isset($powerboost) ||
+isset($health) ||
+isset($hyper) ||
+isset($cost) ||
+isset($ability) ){
+
+
+	foreach($figures as $f => $s){
+		$go = 1;
+		
+		if( $limited = uscore(str_replace('%20','_',$limited)) ){
+			if( ( $limited == "yes" && !array_key_exists('Limited',$s['abilities']) ) || ( $limited == "no" && ( uscore($s['form']) == "monster" || array_key_exists('Limited',$s['abilities']) ) ) ){$go = 0;}
+		}
+		
+		
+		if( $figure = uscore(str_replace('%20','_',$figure)) ){if( !magic($figure,$f) ){$go = 0;}}
+		if( $type = uscore(str_replace('%20','_',$type)) ){if( !magic($type,uscore($s['type'])) ){$go = 0;}}
+		if( $hazard = uscore(str_replace('%20','_',$hazard)) ){if( !magic($hazard,uscore($s['hazard'])) ){$go = 0;}}
+		if( $form = uscore(str_replace('%20','_',$form)) ){if( !magic($form,uscore($s['form'])) ){$go = 0;}}
+		if( $class = uscore(str_replace('%20','_',$class)) ){if( !magic($class,uscore($s['class'])) ){$go = 0;}}
+		if( $faction = uscore(str_replace('%20','_',$faction)) ){if( !magic($faction,uscore($s['faction'])) ){$go = 0;}}
+		if( $agenda = uscore(str_replace('%20','_',$agenda)) ){if( !magic($agenda,uscore($s['agenda'])) ){$go = 0;}}
+		if( $energytype = uscore(str_replace('%20','_',$energytype)) ){if( !magic($energytype,uscore($s['energyType'])) ){$go = 0;}}
+		if( $set = uscore(str_replace('%20','_',$set)) ){if( !magic($set,uscore($s['set'])) ){$go = 0;}}
+		if( $setcolor = uscore(str_replace('%20','_',$setcolor)) ){if( !magic($setcolor,uscore($s['setColor'])) ){$go = 0;}}
+		if( $rarity ){if( $rarity != $s['rarity'] ){$go = 0;}}
+		if( $speed ){if( $speed != $s['speed'] ){$go = 0;}}
+		if( $defense ){if( $defense != $s['defense'] ){$go = 0;}}
+		if( $energy ){if( $energy != $s['energy'] ){$go = 0;}}
+		if( $brawl ){if( $brawl != $s['brawl'] ){$go = 0;}}
+		if( $brawlboost ){if( $brawlboost != $s['brawlboost'] ){$go = 0;}}
+		if( $blast ){if( $blast != $s['blast'] ){$go = 0;}}
+		if( $blastboost ){if( $blastboost != $s['blastboost'] ){$go = 0;}}
+		if( $blastrange = uscore(str_replace('%20','_',$blastrange)) ){if( !magic($blastrange,uscore($s['blastRange'])) ){$go = 0;}}
+		if( $power ){if( $power != $s['power'] ){$go = 0;}}
+		if( $powerboost ){if( $powerboost != $s['powerboost'] ){$go = 0;}}
+		if( $health ){if( $health != $s['health'] ){$go = 0;}}
+		if( $hyper ){if( $hyper != $s['hyper'] ){$go = 0;}}
+		if( $cost ){if( $cost != $s['cost'] ){$go = 0;}}
+                if( $format == "insert" && $s['form'] != "Mega" && $s['form'] != "Quantum" && $s['form'] != "Shadow" && $s['form'] != "Glass" && !array_key_exists("Limited",$s['abilities'])){$go = 0;}
+
+
+		if( $ability = uscore(str_replace('%20','_',$ability)) ){
+			$i = 0;
+			foreach($s['abilities'] as $k => $v){
+				if( magic($ability,uscore($k)) ){$i = 1;}
+			}
+			if(!$i){$go = 0;}
+		}
+
+
+
+
+
+
+
+
+
+		if( $go ){$o = uscore($s['form']);
+			print("<img src=\"assets/".$format.$languageDir."/".uscore($s['faction'])."/".$f.".jpg\">");
+		}
+	}
+
+}else{
+?>
+
+<form action="" method="get">
+	<p id="figure"><label for="figure">Figure:</label> <input type="text" name="figure"></p>
+
+<?
+function dropdown($value){
+	global $figures;
+	$holding = array();
+	foreach($figures as $data){if(isset($data[$value])){$holding[] = $data[$value];}}
+	$holding = array_unique($holding);
+	asort($holding);
+	
+	print("	<p id=\"".uscore($value)."\"><label for=\"".uscore($value)."\">".ucfirst($value).":</label> <select name=\"".uscore($value)."\">
+		<option value=\"\" SELECTED>-</option>");
+	
+    foreach($holding as $value){print("		<option value=\"".$value."\">".$value."</option>
+");}
+	
+	print("</select></p>
+");
+	
+}
+
+dropdown('type');
+dropdown('hazard');
+
+
+$languages = array("english","german");
+
+?>
+
+	<p id="language"><label for="language">Language:</label> <select name="language">
+<?php 
+foreach($languages as $lang){
+  print("<option value=\"".$lang."\"");
+  if($language == $lang){print(" SELECTED");}
+  print(">".$lang."</option>");
+}
+
+
+?>
+	</select></p>
+
+	<p id="format"><label for="format">Format:</label> <select name="format">
+		<option value="card"<? if($format == "card"){print(" SELECTED");} ?>>card</option>
+		<option value="insert"<? if($format == "insert"){print(" SELECTED");} ?>>insert</option>
+	</select></p>
+
+	<p id="form"><label for="form">Form:</label> <select name="form">
+		<option value="" SELECTED>-</option>
+		<option value="alpha">alpha</option>
+		<option value="ultra">ultra</option>
+		<option value="mega">mega</option>
+		<option value="quantum">quantum</option>
+		<option value="glass">glass</option>
+		<option value="shadow">shadow</option>
+	</select></p>
+<?php
+dropdown('class');
+dropdown('faction');
+dropdown('agenda');
+dropdown('energyType');
+dropdown('set');
+dropdown('setColor');
+dropdown('rarity');
+dropdown('speed');
+dropdown('defense');
+dropdown('energy');
+dropdown('brawl');
+dropdown('brawlBoost');
+dropdown('blast');
+dropdown('blastBoost');
+dropdown('blastRange');
+dropdown('power');
+dropdown('powerBoost');
+dropdown('health');
+dropdown('hyper');
+dropdown('cost');
+
+?>
+
+	<p><label for="limited">Limited:</label> <select name="limited">
+		<option value="" SELECTED>-</option>
+		<option value="yes">yes</option>
+		<option value="no">no</option>
+	</select></p>
+	
+	<p><label for="ability">Ability:</label> <input type="text" name="ability"></p>
+
+	
+
+
+
+	
+	
+	
+	<p class="submit"><input type="submit" value="Submit"> <input type="reset" value="Clear"></p>
+ </form>
+<div style="clear:both;height:20px;"></div>
+<?php
+	$d = dir_list('assets/figures');
+	foreach($d as $fc){
+		if($fc != "map"){
+			if(strtolower($fc) == "g.u.a.r.d"){$fc = "G.U.A.R.D.";}
+			if(strtolower($fc) == "neutral"){$type = "faction=".strtolower($fc)."&language=".$language."&format=".$format."&type=building\">Buildings";}else{$type = "faction=".strtolower($fc)."&language=".$language."&format=".$format."&type=monster\">Monsters";}
+			print("<div class='faction'><div class='header'><a href=\"?faction=".strtolower($fc)."&language=".$language."&format=".$format."\">
+	<p class='title'>".ucname(str_replace("_"," ",$fc))."</a> <a class='monster' style='color:#ed1c24;' href=\"?".$type."</a> <a class='unit' style='color:#1c75bc;' href=\"?faction=".strtolower($fc)."&language=".$language."&format=".$format."&type=unit\">Units</a></p>
+</div><a href=\"?faction=".strtolower($fc)."&language=".$language."&format=".$format."\"><img src='images/style/".strtolower($fc).".jpg'></a></div>
+
+");
+		}else{
+			print("<div class='faction'><div class='header'><a href=\"?type=".strtolower($fc)."\">
+	<p class='title'>".ucname(str_replace("_"," ",$fc))."</a> </p>
+</div><a href=\"?faction=".strtolower($fc)."&language=".$language."&format=".$format."\"><img src='images/style/".strtolower($fc).".jpg'></a></div>
+
+");
+		}
+	}
+}
+include("include/footer.htm");
+?>
+
+</body>
+</html>
